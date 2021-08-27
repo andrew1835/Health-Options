@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Longer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="intro">
+        <!-- in email to Yong: Gloria was diagnosed with diabetes sometime in her mid fifties -->
+    </div>
+
+
+    <div id="header">
+        <h1>Your Life Expectancy: <span id="lifeSpan"></span></h1>
+    </div>
+
+    <h3 id="firstH3">Gloria, this is your life expectancy as it stands today, but let's see how some simple lifestyle
+        changes can help you live a longer, healthier, happier life.</h3>
+    <!-- <h3 id="secondH3">Toggle the answers below to see how making some simple life changes can help you live a longer,
+        healthier,
+        happier life:</h3> -->
+
+
+    <div id="switchesDiv">
+        <div class="switchDiv">
+            <h4 class="question">Do you take your medication as prescribed?</h4>
+            <h4 class="no">No</h4>
+            <label class="switch">
+                <input type="checkbox" onclick="toggle1()" class="toggleStyle">
+                <span class="slider round"></span>
+            </label>
+            <h4 class="yes">Yes</h4>
+        </div>
+
+        <div class="switchDiv">
+            <h4 class="question">Do you eat a healthy diet?</h4>
+            <h4 class="no">No</h4>
+            <label class="switch">
+                <input type="checkbox" onclick="toggle2()" class="toggleStyle">
+                <span class="slider round"></span>
+            </label>
+            <h4 class="yes">Yes</h4>
+        </div>
+
+        <div class="switchDiv">
+            <h4 class="question">Do you engage in 2.5 hours of exercise per week (including walking)?</h4>
+            <h4 class="no">No</h4>
+            <label class="switch">
+                <input type="checkbox" onclick="toggle3()" class="toggleStyle">
+                <span class="slider round"></span>
+            </label>
+            <h4 class="yes">Yes</h4>
+        </div>
+    </div>
+
+
+
+    <!-- Did you know that people who properly manage their diabetes can live a longer and healthier life than the average person without diabetes? It's true, and heyRenee makes it easier than ever to manage all your health needs. -->
+
+
+    <!-- Footnote references: -->
+    <!-- for diabetes life expectancy: https://www.medicalnewstoday.com/articles/317477 -->
+    <!-- can live longer with diabetes if properly managed: https://www.everydayhealth.com/type-2-diabetes/living-with/diabetes-life-expectancy-myths-tips-increase-your-longevity/ -->
+    <!-- how exercise can improve lifespan by about 7 years: https://www.allinahealth.org/healthysetgo/move/exercise-is-key-to-living-longer#:~:text=Regular%2C%20moderate%20activities%2C%20such%20as,t%20do%20regular%20moderate%20exercise. -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
