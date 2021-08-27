@@ -7,6 +7,8 @@ var lifeSpan = document.getElementById("lifeSpan")
 lifeSpan.setAttribute("style", "color: red")
 lifeSpan.innerHTML = lifeTime + " Years"
 
+var plusTime = document.getElementById("plusTime")
+
 
 var toggleStyle = document.getElementsByClassName('toggleStyle')
 
@@ -38,6 +40,7 @@ function toggle1() {
         toggleTracker1++
         lifeTime += 3
         lifeSpan.innerHTML = lifeTime + " Years"
+        plusFunction()
     }
     else {
         toggleTracker1--
@@ -53,6 +56,7 @@ function toggle2() {
         toggleTracker2++
         lifeTime += 3
         lifeSpan.innerHTML = lifeTime + " Years"
+        plusFunction()
     }
     else {
         toggleTracker2--
@@ -67,6 +71,7 @@ function toggle3() {
         toggleTracker3++
         lifeTime += 3
         lifeSpan.innerHTML = lifeTime + " Years"
+        plusFunction()
     }
     else {
         toggleTracker3--
@@ -77,7 +82,16 @@ function toggle3() {
 }
 
 
+function plusFunction() {
+    plusTime.setAttribute("style", "opacity: 1")
+    setTimeout(function () {
+        plusTime.setAttribute("style", "opacity: 0")
+    }, 1000)
+}
+
 
 // up to +9 years with tackling diabetes, up to 9 years with other healthy lifestyle changes
 
 // animation so that when they click a slider, there's a "+3" in green that briefly appears, and then disappears next to the life expectancy years
+
+
